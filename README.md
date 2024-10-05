@@ -53,12 +53,13 @@ A backend API that supports CRUD operations on inventory items built using djang
 * item_id is the id of the item that you can check from the DB in MySQL Workbench.
 * similarly, the PUT method can be used using the payload structure of POST to update any item.
 * DELETE method can be used to delete the item from the Database using the endpoint mentioned in the API Documentation section.
-* to run the test cases, use the command: python manage.py test inventory.tests (NOTE: Authentication is not included in test cases my bad!, so before running the test cases, please comment that out in the API)
+* to run the test cases, use the command: python manage.py test inventory.tests (NOTE: Authentication is not included in test cases my bad! so before running the test cases, please comment out Authentications in all the APIs)
 ## References and Sources
 * download Postman: https://www.postman.com/downloads/?utm_source=postman-home
 * download MySQL: https://dev.mysql.com/downloads/installer/
 * follow this to configure MySQL: https://www.w3schools.com/mysql/mysql_install_windows.asp
 * install Redis cache: github.com/microsoftarchive/redis/release (download the .msi file)
+* a video demo for the project: https://screenrec.com/share/dvYzfKPo94
 
 Tada! you are done with your implementation for a backend API setup using Django Rest Framework. Keep Learning.
 For queries, drop me an email: tanmayanayak1305@gmail.com
