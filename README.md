@@ -24,7 +24,8 @@ A backend API that supports CRUD operations on inventory items built using djang
 * install requirements (pip install -r requirements.txt)
 * install Redis in your machine (references are mentioned in settings.py)
 * install and configure MySQL in your machine (references are mentioned in settings.py)
-* create a database "inventory" using MySQL Workbench (create database inventory;)
+* create a database "inventory" using MySQL Workbench (command:- create database inventory;)
+* do the migrations (1st command: python manage.py makemigrations , 2nd command: python manage.py migrate)
 * start the server (python manage.py runserver)
 ## API Documentation
 * There are 3 APIs used in this application to perform CRUD operations.
