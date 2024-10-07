@@ -38,12 +38,12 @@ A backend API that supports CRUD operations on inventory items built using djang
 ## Usage Guide
 * after the setup is successful, run the server and use tool like Postman to trigger the APIs.
 * download Postman: https://www.postman.com/downloads/?utm_source=postman-home
-* hit the endpoint: inventory-manager/get_jwt_token/ to get the access token usig the payload (or you can create you own users): 
+* hit the endpoint: inventory-manager/get_jwt_token/ to get the access token using the payload (or you can create you own users): 
 {
     "username": "tanmaya",
     "password": "admin"
 }
-* NOTE:- pass the generated token in the headers of each API through Postman > Authorization > select Bearer token
+* NOTE:- pass the generated token in the headers of each API through Postman > Authorization > select Bearer token > paste the access token in the input field
 * to add an item to the inventory, use the endpoint: localhost:8000/inventory-manager/items/ and payload structure: 
 {
     "name":"Rice",
@@ -52,7 +52,7 @@ A backend API that supports CRUD operations on inventory items built using djang
 }
 * similary to fetch the details of the item use the endpoint: localhost:8000/inventory-manager/items/{item_id}/
 * item_id is the id of the item that you can check from the DB in MySQL Workbench.
-* similarly, the PUT method can be used using the payload structure of POST to update any item.
+* similarly, the PUT method can be used, using the payload structure of POST, to update any item.
 * DELETE method can be used to delete the item from the Database using the endpoint mentioned in the API Documentation section.
 * to run the test cases, use the command: python manage.py test inventory.tests (NOTE: Authentication is not included in test cases my bad! so before running the test cases, please comment out Authentications in all the APIs)
 ## References and Sources
